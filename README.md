@@ -97,7 +97,7 @@ def playfair_decrypt(cipher, keyword):
     pairs = [cipher[i:i+2] for i in range(0, len(cipher), 2)]
     return ''.join([decrypt_pair(pair, table, pos) for pair in pairs])
 key_value = "HELLOWORLD" 
-plain_text = "Manikandan"
+plain_text = "SANTHOSH"
 cipher_text = playfair_encrypt(plain_text, key_value)
 decrypted_text = playfair_decrypt(cipher_text, key_value)
 print("Plain Text:", plain_text)
